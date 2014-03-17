@@ -4,7 +4,7 @@ class roles::syd_f5_load_balancer {
   $vlan_defaults  = hiera('roles::syd_f5_load_balancer::vlan_defaults')
 
   #create resources for VLANS
-  create_resource('f5_v11_vlan',$vlans,$vlan_defaults)
+  create_resources('f5_v11_vlan',$vlans,$vlan_defaults)
 
   F5_v11_node {
 	  state       => 'user-up',
