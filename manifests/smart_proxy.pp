@@ -1,6 +1,6 @@
 class roles::smart_proxy {
 
   include profiles::base
-  class {'profiles::f5_proxy': }
+  profiles::f5_proxy {'f5.puppetlabs.lan': }
 
 }
