@@ -66,7 +66,7 @@ class roles::syd_f5_load_balancer {
 	  ensure      => present,
 	  destination => '192.168.111.2',
 	  port        => '8281',
-	  pool        => 'test_http_pool',
+	  pool        => 'test_http_pool_0',
 	  protocol    => 'tcp',
 	}
 }	
