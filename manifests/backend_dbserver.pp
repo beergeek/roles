@@ -1,6 +1,6 @@
 class roles::backend_dbserver {
 
-  include base
-  include mysql_php
+  include profiles::base
+  include profiles::mysql_php
 
 }

@@ -68,5 +68,6 @@ class roles::syd_f5_load_balancer {
 	  port        => '8281',
 	  pool        => 'test_pool_0',
 	  protocol    => 'tcp',
+    require    => F5_v11_pool['test_pool_0'],
 	}
 }	
